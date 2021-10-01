@@ -27,9 +27,9 @@ function Chatspace({ user }) {
 
             })
 
-            db.collection('Channels').doc(channel).collection("ChannelMessages").orderBy('timestamp','asc').onSnapshot(snapShot=>(
+            db.collection('Channels').doc(channel).collection("ChannelMessages").orderBy('timestamp', 'asc').onSnapshot(snapShot => (
                 setChannelMessages(
-                    snapShot.docs.map(doc=>(doc.data()))
+                    snapShot.docs.map(doc => (doc.data()))
                 )
             ))
         }
@@ -58,9 +58,9 @@ function Chatspace({ user }) {
             <h2>#{channelinfo?.name}</h2>
             <div classsName="chatspace__chat">
                 {
-                   channelmessages?.map(message=>(
-                       <Message message={message.message} username={message.userName} image={message.image} timestamp={message.timestamp}/>
-                   ))
+                    channelmessages?.map(message => (
+                        <Message message={message.message} username={message.userName} image={message.image} timestamp={message.timestamp} />
+                    ))
                 }
             </div>
             <div className="send__messages">

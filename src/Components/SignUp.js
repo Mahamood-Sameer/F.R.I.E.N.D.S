@@ -1,6 +1,7 @@
 import React from 'react'
 import './SignUp.css'
 import { auth ,provider} from '../Firebase';
+import logo from "./FRIENDS.drawio.png"
 
 function SignIn() {
 
@@ -15,7 +16,7 @@ function SignIn() {
     return (
         <div className="signIn">
             <div className="signIn_form">
-                <h1>F.R.I.E.N.D.S</h1>
+                <img src={logo} alt="Logo"  />
                 <br />
                 <h3>To start the conversation just click on SignUp</h3>
                 <br />
