@@ -1,9 +1,7 @@
 .chatspace{
     flex: 0.8;
     height: 100vh;
-    overflow-y: auto;
-    margin-right: 5px;
-
+    overflow-y: scroll;
 }
 
 
@@ -25,6 +23,9 @@
     border-bottom: 1px solid grey;
 }
 
+.chatspace__chat{
+    padding-bottom: 100px;
+}
 
 .message__box{
     margin: 15px;

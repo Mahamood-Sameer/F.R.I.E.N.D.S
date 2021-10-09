@@ -56,7 +56,7 @@ function Chatspace({ user }) {
     return (
         <div className="chatspace">
             <h2>#{channelinfo?.name}</h2>
-            <div classsName="chatspace__chat">
+            <div className="chatspace__chat">
                 {
                     channelmessages?.map(message => (
                         <Message message={message.message} username={message.userName} image={message.image} timestamp={message.timestamp} />

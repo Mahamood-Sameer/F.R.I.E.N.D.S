@@ -10,20 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-y: auto;
-}
-
-body::-webkit-scrollbar{
-  width: 10px;
-}
-body::-webkit-scrollbar-track{
-  border-radius: 10px;
-  background-color: none;
-}
-
-body::-webkit-scrollbar-thumb{
-  background-color: rgb(209, 204, 204);
-  border-radius: 10px;
+  overflow: hidden;
 }
 
 code {

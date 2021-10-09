@@ -3,8 +3,6 @@
     color: white;
     flex: 0.2;
     border-right: 1px solid grey;
-    height: 100vh;
-    overflow-y: scroll;
     font-weight: bold;
 }
 
