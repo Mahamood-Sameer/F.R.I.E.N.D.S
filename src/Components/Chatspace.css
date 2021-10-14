@@ -21,6 +21,14 @@
 .chatspace > h2{
     padding: 10px;
     border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+}
+.members__in__chat{
+    text-transform: none !important;
+    font-size: 16px !important;
+    background-color:rgb(179, 17, 179) !important ;
+    color: white !important;
 }
 
 .chatspace__chat{
@@ -34,8 +42,10 @@
     flex-direction: column;
     padding: 10px;
     width: fit-content;
+    max-width: 320px;
     border: 1px solid grey;
     border-left: 5px solid grey;
+    border-right: 5px solid grey;
     border-radius: 10px;
 }
 .message{
@@ -53,7 +63,7 @@
     object-fit: contain;
     border-radius: 5px;
 }
-.message__info p{
+.message__info > p{
     margin-left: 10px;
     font-weight: bold;
     font-size: 11px;

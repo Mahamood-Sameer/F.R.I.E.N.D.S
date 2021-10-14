@@ -6,6 +6,7 @@ import Message from './Message';
 import firebase from '@firebase/app-compat';
 
 
+
 function Chatspace({ user }) {
 
     let { channel } = useParams()
@@ -50,8 +51,6 @@ function Chatspace({ user }) {
 
     }
 
-    console.log(channelinfo)
-    console.log(channelmessages)
 
     return (
         <div className="chatspace">
