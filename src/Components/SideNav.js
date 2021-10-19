@@ -44,13 +44,13 @@ function SideNav({user}) {
                 {
                     channels.map((channel)=>{
                         return(
-
+                            <>
                             <SideNavChannels title={channel.name} id={channel.id}/>
+                            </>
                         )
                     })
                 }
             </div>
-
         </div>
     )
 }

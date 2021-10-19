@@ -7,7 +7,6 @@ function SignIn() {
 
     const signUp_the_user=()=>{
         auth.signInWithPopup(provider).then((result)=>{
-            console.log(result)
         }).catch((err)=>{
             alert(err.message)
         })

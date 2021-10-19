@@ -6,6 +6,7 @@ import Chatspace from './Components/Chatspace';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import SignIn from './Components/SignUp';
 import { auth } from './Firebase';
+import { Redirect } from 'react-router';
 
 function App() {
 
@@ -34,9 +35,7 @@ function App() {
               <div className="app__contents">
                 <SideNav user={user}/>
                 <Route path="/" exact>
-                    <div className="conversation__info">
-                          <h1>Start the Conversation by Selecting the channel</h1>
-                    </div>
+                  <Redirect to="/Channel/VJDu5UWF9bBGyp29I2QP"/>
                 </Route>
                 <Route path="/Channel/:channel">
                   <Chatspace user={user}/>

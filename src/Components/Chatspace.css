@@ -84,8 +84,8 @@
     justify-content: center;
     flex-wrap: nowrap;
     position: fixed;
-    left: 75%;
-    top: 90%;
+    bottom: 5%;
+    right: 5%;
     background-color: purple;
     color: white;
     padding: 10px;
@@ -95,9 +95,13 @@
 .send__messages input{
     background:none;
     border: none;
-    width: 15vw;
+    width: 20vw;
+    font-size: 15px;
     padding: 10px;
     color: white;
+}
+.send__messages input:focus{
+    outline:0;
 }
 ::placeholder{
     color: wheat;

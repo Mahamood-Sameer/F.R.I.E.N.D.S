@@ -4,6 +4,8 @@
     flex: 0.2;
     border-right: 1px solid grey;
     font-weight: bold;
+    height: 100vh;
+    overflow-y: scroll;
 }
 
 .sidenav::-webkit-scrollbar{
@@ -37,6 +39,9 @@
 
 .sidenav__topheader__info h6 .MuiSvgIcon-root{
     color: rgb(33, 192, 33) !important;
+}
+.sidenav__channels{
+    padding-bottom: 100px;
 }
 
 .sidenav__channels > h4{

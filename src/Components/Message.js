@@ -10,7 +10,6 @@ function Message({message,username,image,timestamp}) {
             </div>
             <hr />
             <p className="message">{message}</p>
-            
         </div>
     )
 }

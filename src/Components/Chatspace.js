@@ -48,7 +48,7 @@ function Chatspace({ user }) {
             })
             setMessage("")
         }
-
+        document.querySelector(".chatspace").scrollTo({ left: 0, top: 19999, behavior: "smooth" })
     }
 
 
@@ -69,7 +69,6 @@ function Chatspace({ user }) {
                     }} placeholder={`Send a Message to ${channelinfo?.name}`} />
                     <button type="submit">Send</button>
                 </form>
-
             </div>
         </div>
     )
