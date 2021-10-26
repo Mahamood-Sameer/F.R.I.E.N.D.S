@@ -5,7 +5,7 @@ function Message({message,username,image,timestamp}) {
     return (
         <div className="message__box">
             <div className="message__info">
-                <img src={image} alt="profile"></img>
+                <img src={image} alt="..."></img>
                 <p>{username}<p className="message__timestamp">{new Date(timestamp?.toDate()).toUTCString()}</p></p>
             </div>
             <hr />
